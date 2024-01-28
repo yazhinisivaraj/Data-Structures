@@ -1,0 +1,50 @@
+Syntax:stack
+//10,20,30,40
+public void push(int value)
+{
+    if(top < maxSize -1){
+         StackArray[++top]=value;
+    }
+    else
+    {
+        System.out.println("Stack overflow,cannot push the value");
+    }
+    //pop()
+    public int loop(){
+        if(top>=0){
+            int poppedValue = stackArray[top--];
+            System.out.println("Popped Value://40 +poppedValue");
+            return poppedValue;
+        }
+        else{
+            System.out.println("Stack  underflow,cant pop");
+        }
+    }
+    //peek()
+    public int peek(){
+        if(top >=0){
+            int peekValue=stackArray[top];
+            System.out.println("Peek Value: "+peekValue);
+            return peekValue;
+        }
+        else{
+            System.out.println("Stack is empty,cant peek");
+        }
+    }
+    //Main method->static value
+    public class Main(){
+        public static void main(String fsh[]){
+            Stack1 stack=new Stack1();
+            stack.push(10);
+            stack.push(20);
+            stack.push(30);
+            stack.push(40);
+            //calling the created stack method
+            stack.pop();
+            stack.peek();
+        }
+    }
+    
+    
+    
+}

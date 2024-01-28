@@ -1,0 +1,34 @@
+//subclass
+//importing library for using collection
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+class Graph{
+    private int numVertices;
+    private int List<list<Integer>>AdjacencyList;
+    
+    //consructor
+    public Graph(int numVertices)
+    {
+        numVertices=numVertices;
+        this.AdjacencyList=new ArrayList<>(numVertices);
+        for(int i=0;i<numVertices;i++)
+        {
+            this.AdjacencyList.add(new ArrayList<>());
+        }
+        public void addEdges(int source,int destination){
+            this.AdjacencyList=get(source).add(destination);
+            this.AdjacencyList=get(destination).add(source);
+            
+        }
+        public void GraphPrint(){
+            System.out.println("Graph: ");
+            for(int i=0;i<numVertices;i++){
+                System.out.println("Vertex: "+i+"=");
+                //foreach loop for encapsulation
+            }
+        }
+    }
+}

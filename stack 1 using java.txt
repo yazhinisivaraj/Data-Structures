@@ -1,0 +1,37 @@
+public class Example2{
+    private static final int MAX_SIZE=100;
+    private int[] stackArray = new int[MAX_SIZE];
+    private int top=-1;
+    
+    // Declaring public for push()
+    public void push(){
+        if(top<MAX_SIZE-1){
+            stackArray[++top]=value;
+            System.out.println("Pushed: "+value);
+        }
+        else{
+            System.out.println("Stack overflow,can't push");
+        }
+    }
+    public int pop(int value){
+        if(top<MAX_SIZE-1){
+            stackArray[++top]=value;
+            System.out.println("");
+        }
+    }
+    public static void main(String[] args){
+        //attempting to pop from an empty stack
+        stack.push(8);
+        stack.push(10);
+        stack.push(30);
+        stack.push(50);
+        stack.push(60);
+        stack.peek();
+        stack.pop();
+        stack.peek();
+        stack.pop();
+        stack.peek();
+        stack.pop();
+        
+    }
+}
